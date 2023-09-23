@@ -1,0 +1,68 @@
+/* Estilo para la sección de información personal */
+.info-section {
+    color: white; /* Texto blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    animation: slideInFromLeft 1s ease forwards; /* Aplicar la animación */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Establece la opacidad a 1 cuando la sección está activa */
+.info-section.active {
+    opacity: 1;
+}
+
+/* Animación de entrada desde la izquierda */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para el título de la sección */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la tabla de información */
+.info-table {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Estilo para las etiquetas de la tabla */
+.label {
+    font-weight: bold;
+}
+
+/* Estilo para la imagen de perfil */
+.profile-image {
+    max-width: 100%;
+    border-radius: 50%; /* Para hacerla redonda */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+/* Estilo para los elementos de la lista de formación académica */
+.institution li {
+    font-weight: bold;
+}
+
+.degree {
+    font-style: italic;
+}

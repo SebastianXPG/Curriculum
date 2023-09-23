@@ -1,0 +1,53 @@
+/* Estilos para el encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(29, 28, 28); /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+/* estilos parta el logo */
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; /* Añade un margen derecho para separar el logo del título */
+}
+
+/* Estilos para el título */
+h1 {
+    margin-left: auto; /* Centra horizontalmente el título */
+}
+
+
+  .header-title {
+    flex-grow: 1; /* Permite que el título crezca y ocupe el espacio restante */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2em; /* Tamaño del título, 2 veces el tamaño de fuente base */
+    margin-bottom: 10px; /* Margen inferior para separar el título de la información */
+    position: relative; /* Para posicionar la línea debajo del título */
+  }
+  
+  .header-title::after {
+    content: ''; /* Crea un elemento pseudo ::after */
+    display: block;
+    width: 50%; /* Ancho de la línea al 100% del header */
+    height: 3px; /* Altura de la línea */
+    background-color: rgb(0, 251, 255); /* Color de la línea (azul neon) */
+    position: absolute; /* Posición absoluta para superponer la línea al título */
+    bottom: -5px; /* Posición debajo del texto */
+    left: 0; /* Comienza desde la izquierda */
+    animation: moveLine 3s infinite alternate; /* Animación de la línea */
+  }
+  
+  @keyframes moveLine {
+    0% {
+      transform: translateX(0); /* Comienza en la posición inicial */
+    }
+    100% {
+      transform: translateX(100%); /* Se desplaza completamente hacia la derecha */
+    }
+  }
+  
+  
