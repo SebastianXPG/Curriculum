@@ -1,6 +1,7 @@
 import "../components/Footer.css"; // Importa el archivo CSS
 
 
+
 function Footer(){
     return(
         <div className="footer">
